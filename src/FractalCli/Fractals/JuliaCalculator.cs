@@ -14,13 +14,13 @@ public static class JuliaCalculator
 
             if (zx2 + zy2 > 4.0)
             {
-                return new EscapeResult(i, escaped: true, zx, zy);
+                return new EscapeResult(i, Escaped: true, zx, zy);
             }
 
             zy = 2.0 * zx * zy + juliaCy;
             zx = zx2 - zy2 + juliaCx;
         }
 
-        return new EscapeResult(maxIterations, escaped: false, zx, zy);
+        return new EscapeResult(maxIterations, Escaped: false, zx, zy);
     }
 }
