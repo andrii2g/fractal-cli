@@ -43,6 +43,22 @@ See [Algorithm Notes](docs/ALGORITHMS.md) for the formulas, implementation choic
 
 ## Examples
 
+### Featured Mandelbrot zoom
+
+![Mandelbrot seahorse valley rendered with the fire palette](samples/mandelbrot-seahorse-fire.png)
+
+```bash
+fractal render mandelbrot \
+  --output samples/mandelbrot-seahorse-fire.png \
+  --width 1200 \
+  --height 675 \
+  --center-x -0.743643887037151 \
+  --center-y 0.13182590420533 \
+  --scale 0.0008 \
+  --max-iterations 1200 \
+  --palette fire
+```
+
 ### Basic Mandelbrot
 
 ```bash
