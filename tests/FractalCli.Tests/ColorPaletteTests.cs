@@ -9,7 +9,7 @@ public class ColorPaletteTests
     [Fact]
     public void InteriorPointMapsToBlack()
     {
-        var color = ColorPalette.Map(new EscapeResult(500, escaped: false, 0, 0), 500, PaletteName.Classic);
+        var color = ColorPalette.Map(new EscapeResult(500, Escaped: false, 0, 0), 500, PaletteName.Classic);
 
         Assert.Equal(new Rgba32(0, 0, 0), color);
     }
@@ -21,7 +21,7 @@ public class ColorPaletteTests
     [InlineData(PaletteName.Gray)]
     public void EscapedPointMapsToVisibleColor(PaletteName palette)
     {
-        var color = ColorPalette.Map(new EscapeResult(250, escaped: true, 3, 0), 500, palette);
+        var color = ColorPalette.Map(new EscapeResult(250, Escaped: true, 3, 0), 500, palette);
 
         Assert.NotEqual(new Rgba32(0, 0, 0), color);
     }
