@@ -59,6 +59,24 @@ fractal render mandelbrot \
   --palette fire
 ```
 
+### Featured Julia set
+
+![Julia set rendered with the ice palette](samples/julia-ice.png)
+
+```bash
+fractal render julia \
+  --output samples/julia-ice.png \
+  --width 1200 \
+  --height 675 \
+  --center-x 0 \
+  --center-y 0 \
+  --scale 3.0 \
+  --julia-cx -0.8 \
+  --julia-cy 0.156 \
+  --max-iterations 800 \
+  --palette ice
+```
+
 ### Basic Mandelbrot
 
 ```bash
