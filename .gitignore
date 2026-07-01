@@ -1,4 +1,10 @@
-/src/FractalCli/obj
-/.vs/FractalCli.slnx/FileContentIndex
-/tests/FractalCli.Tests/bin/Debug/net10.0
-/tests/FractalCli.Tests/obj
+bin/
+obj/
+.vs/
+.vscode/
+*.user
+*.suo
+TestResults/
+coverage/
+artifacts/
+samples/generated/
