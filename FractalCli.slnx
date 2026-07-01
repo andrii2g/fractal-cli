@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/FractalCli/FractalCli.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/FractalCli.Tests/FractalCli.Tests.csproj" />
+  </Folder>
+</Solution>
